@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import{RouterModule} from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './navegacao/home/home.component';
 import { MenuComponent } from './navegacao/menu/menu.component';
@@ -24,7 +24,8 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(rootRouterConfig)
+    RouterModule.forRoot(rootRouterConfig),
+    FormsModule
   ],
   providers: [
     {provide:APP_BASE_HREF,useValue:'/'}

@@ -16,4 +16,17 @@
 <br>
 <button class="btn btn-warning" (click)="adicionarClique()">Clique-me</button>&nbsp;
 <button class="btn btn-danger" (click)="zerarContador()" [disabled]="contadorClique<5">Zerar Contador</button>
+<br>
+<br>
+<br>
+<br>
+<h3>Two-way Binding</h3>
+<!-- <input type="text" (keyup)="KeyUp($event)" placeholder="Digite o seu nome">
+<br>
+<br>
+<label>Seu nome é:{{nome}}</label> -->
+<input type="text" [(ngModel)]="nome"  (ngModelChange)="nome=$event" placeholder="Digite o seu nome">
+<br>
+<br>
+<label>Seu nome é:{{nome}}</label>
 </div>
