@@ -11,6 +11,7 @@ import { SobreComponent } from './instituicional/sobre/sobre.component';
 import { ContactoComponent } from './instituicional/contacto/contacto.component';
 import { rootRouterConfig } from './app.route';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
+import { ProdutoService } from './services/produtos/produtos.service';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
     FormsModule
   ],
   providers: [
+    ProdutoService,
     {provide:APP_BASE_HREF,useValue:'/'}
   ],
   bootstrap: [AppComponent]
