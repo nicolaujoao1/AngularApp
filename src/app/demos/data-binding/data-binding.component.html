@@ -2,14 +2,21 @@
 <br>
 <br>
 <h3>Interpolation</h3>
-<p>Numero de clique {{contadorClique}}</p>
+<!-- <p>Numero de clique {{contadorClique}}</p> -->
+<p [ngClass]="{
+    'text-secondary':contadorClique < 3,
+    'text-success':contadorClique >= 3,
+    'text-warning':contadorClique >= 5,
+    'text-danger':contadorClique >= 9
+  }">O número de cliques é: {{ contadorClique }}</p>
+
 <br>
 <br>
 <h1>Property Binding</h1>
 <img [src]="urlImagem" height="100px" width="100px">
 <br>
 <br>
-<button class="btn btn-info" [disabled]='contadorClique>=5'>Clicar</button>
+<button class="btn btn-info" [disabled]='contadorClique>=10'>Clicar</button>
 <br>
 <br>
 <br>

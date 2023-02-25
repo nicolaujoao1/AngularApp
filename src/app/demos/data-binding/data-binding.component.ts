@@ -14,7 +14,7 @@ export class DataBindingComponent {
   zerarContador(){ 
    this.contadorClique=1; 
   }
-  KeyUp(event:any){
-    this.nome=event.target.value; 
-  }
+  // KeyUp(event:any){
+  //   this.nome=event.target.value; 
+  // }
 }
