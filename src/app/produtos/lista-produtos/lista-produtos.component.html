@@ -19,20 +19,20 @@
                 <div *ngIf="produto.promocao" class="card-body">
                     <div><h4 class="card-text">De:
                         <small><del>{{ produto.valor |currency:'AO':'symbol':'1.2-2':'pt-AO'}}</del></small>
-                        Por: {{ produto.valorPromo  }}
+                        Por: {{ produto.valorPromo  |currency:'AO':'symbol':'1.2-2':'pt-AO'}}
                     </h4></div>
                 </div>
-<!-- 
+ 
                 <div *ngIf="!produto.promocao" class="card-body">
-                    <div><h4>{{ produto.valor | currency:'BRL':true:'1.2-2':'pt' }}</h4></div>
+                    <div><h4>{{ produto.valor | currency:'AO':'symbol':'1.2-2':'pt-AO'  }}</h4></div>
                 </div>
 
                 <div class="card-footer">
                     <a class="btn btn-primary" [routerLink]="['/carrinho',produto.id]">
                         <span class="fa fa-shopping-cart"></span> Comprar
                     </a>
-                </div> -->
-            </div>
+                </div> 
+            </div> 
         </div>
     </div>
 </div>
