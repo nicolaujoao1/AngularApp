@@ -2,6 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import{RouterModule} from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
+
+import { registerLocaleData } from '@angular/common';
+
+import localePt from '@angular/common/locales/pt-AO';
+registerLocaleData(localePt)
+
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 

@@ -18,7 +18,7 @@
 
                 <div *ngIf="produto.promocao" class="card-body">
                     <div><h4 class="card-text">De:
-                        <small><del>{{ produto.valor }}</del></small>
+                        <small><del>{{ produto.valor |currency:'AO':'symbol':'1.2-2':'pt-AO'}}</del></small>
                         Por: {{ produto.valorPromo  }}
                     </h4></div>
                 </div>
