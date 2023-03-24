@@ -4,6 +4,7 @@ import { ContactoComponent } from "./instituicional/contacto/contacto.component"
 import { SobreComponent } from "./instituicional/sobre/sobre.component";
 import { DataBindingComponent } from "./demos/data-binding/data-binding.component";
 import { ListaProdutosComponent } from "./produtos/lista-produtos/lista-produtos.component";
+import { CadastroComponent } from "./demos/reactiveforms/cadastro/cadastro.component";
 
 export const rootRouterConfig: Routes =[
     {path: '', redirectTo: '/home', pathMatch:'full'},
@@ -12,5 +13,6 @@ export const rootRouterConfig: Routes =[
     {path:'sobre',component: SobreComponent},
     {path:'feature-data-binding',component: DataBindingComponent},
     {path:'produtos',component:ListaProdutosComponent},
-    { path: 'produto-detalhe/:id', component: ListaProdutosComponent }
+    { path: 'produto-detalhe/:id', component: ListaProdutosComponent },
+    {path:'cadastro', component: CadastroComponent}
 ];

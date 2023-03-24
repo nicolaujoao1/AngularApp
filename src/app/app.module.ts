@@ -8,7 +8,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt-AO';
 registerLocaleData(localePt)
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -21,6 +21,7 @@ import { rootRouterConfig } from './app.route';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 import { ProdutoService } from './services/produtos/produtos.service';
 import { ListaProdutosComponent } from './produtos/lista-produtos/lista-produtos.component';
+import { CadastroComponent } from './demos/reactiveforms/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ListaProdutosComponent } from './produtos/lista-produtos/lista-produtos
     SobreComponent,
     ContactoComponent,
     DataBindingComponent,
-    ListaProdutosComponent
+    ListaProdutosComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
